@@ -1,7 +1,7 @@
 const display = document.getElementById("display");
 
 // Function to handle number button clicks
-function handleButtonClick(event) {
+const handleButtonClick = (event) => {
   const clickedButton = event.target;
   const buttonText = clickedButton.textContent;
 
@@ -16,22 +16,22 @@ buttons.forEach((button) => {
 });
 
 //Function to make calculation and display results
-function calculate() {
+const calculate = () => {
   resultValue = display.value;
-  var result = eval(resultValue);
+  let result = eval(resultValue);
   display.value = result;
-}
+};
 
 //event listener for equals button
 const equals = document.getElementById("equals");
-function handleCalculate() {
+const handleCalculate = () => {
   console.log(display.value);
 }
 equals.addEventListener("click", calculate);
 
 // Function to handle C button click
 const clear = document.getElementById("clear");
-function handleCClick(event) {
+const handleCClick = () => {
   // Append the clicked button's text to the display
   display.value = "";
 }
