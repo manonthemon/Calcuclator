@@ -16,7 +16,7 @@ This is a simple on-screen calculator app. I made it to practice using HTML, CSS
 
 ## Deployment
 
-The deployed app can be tested here: https://manonthemon.github.io/calculator
+The deployed app can be tested here: https://manonthemon.github.io/Calcuclator/
 
 ## Contributors
 
