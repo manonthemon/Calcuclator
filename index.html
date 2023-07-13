@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Calculator</title>
 </head>
+
 <body>
 
-<div class="main-wrapper">
+    <div class="main-wrapper">
 
-    <!-- This is the top row with inputs and results display and C button  -->
-    <div id="top-row">
-        
-        <input type="text" id="display" readonly>
-        <button id="clear">C</button>
-    
+        <!-- This is the top row with inputs and results display and C button  -->
+        <div id="top-row" class="grid-col-span-2">
+
+            <input type="text" id="display" readonly>
+            <button id="clear">C</button>
+
+        </div>
+
+        <div id="num-pad">
+
+            <!-- This is the numbers pad  -->
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="func-button">/</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="func-button">*</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="func-button">-</button>
+            <button>0</button>
+            <button>.</button>
+            <button id="equals">=</button>
+            <button class="func-button">+</button>
+
+        </div>
+
     </div>
 
-    <div id="num-pad">
-
- <!-- This is the numbers pad  -->
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>/</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>*</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>-</button>
-        <button>0</button>
-        <button>.</button>
-        <button>=</button>
-        <button>+</button>
-
-    </div>
-
-</div>
-    
-<script src="./scripts.js"></script>
+    <script src="./scripts.js"></script>
 </body>
 
 </html>
