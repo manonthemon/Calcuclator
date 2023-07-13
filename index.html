@@ -10,44 +10,51 @@
 
 <body>
 
-    <div class="wrapper">
-    <div class="calc-wrapper">
+<div class="wrapper">
 
-        <!-- This is the top row with inputs and results display and C button  -->
-        <div id="top-row" class="grid-col-span-2">
+    <div class="calculator">
 
-            <input type="text" id="display" readonly>
+        <div class="results">
+
+            <input type="text" value="0" id="display" readonly>
             <button id="clear">C</button>
-
         </div>
 
-        <div id="num-pad">
+        <div class="numbers">
 
-            <!-- This the numbers pad  -->
-            <button class="num-button">7</button>
-            <button class="num-button">8</button>
-            <button class="num-button">9</button>
-            <button class="num-button">/</button>
-            <button class="num-button">4</button>
-            <button class="num-button">5</button>
-            <button class="num-button">6</button>
-            <button class="num-button">*</button>
-            <button class="num-button">1</button>
-            <button class="num-button">2</button>
-            <button class="num-button">3</button>
-            <button class="num-button">-</button>
-            <button class="num-button">0</button>
-            <button class="num-button">.</button>
-            <button id="equals">=</button>
-            <button class="num-button">+</button>
+            <div class="pad">
+                <button class="num-button">7</button>
+                <button class="num-button">8</button>
+                <button class="num-button">9</button>
+
+                <button class="num-button">4</button>
+                <button class="num-button">5</button>
+                <button class="num-button">6</button>
+
+                <button class="num-button">1</button>
+                <button class="num-button">2</button>
+                <button class="num-button">3</button>
+
+                <button class="num-button">0</button>
+                <button class="num-button">.</button>
+                <button id="equals">=</button>
+
+            </div>
+
+            <div class="modules">
+                <button class="num-button">/</button>
+                <button class="num-button">*</button>
+                <button class="num-button">-</button>
+                <button class="num-button">+</button>
+            </div>
 
         </div>
 
     </div>
-    <small><a href="https://github.com/manonthemon">By: Maciek Klimowicz</a></small>
 </div>
-  
 
+
+ 
     <script src="./scripts.js"></script>
 </body>
 

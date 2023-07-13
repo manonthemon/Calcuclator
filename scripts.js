@@ -6,7 +6,13 @@ const handleButtonClick = (event) => {
   const buttonText = clickedButton.textContent;
 
   // Append the clicked button's text to the display
-  display.value += buttonText;
+
+  if(display.value == 0) {
+    display.value = ""
+    display.value += buttonText;
+  }
+  else 
+  {display.value += buttonText};
 }
 
 // Attach click event listeners to all number buttons
@@ -33,6 +39,6 @@ equals.addEventListener("click", calculate);
 const clear = document.getElementById("clear");
 const handleCClick = () => {
   // Append the clicked button's text to the display
-  display.value = "";
+  display.value = "0";
 }
 clear.addEventListener("click", handleCClick);
