@@ -9,12 +9,14 @@ body {
 
 button {
     border: 0px;
+    height: 5vh;
     font-size: large;
     background-color: rgb(135, 138, 138);
     color: beige;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
     border-radius: 5%;
+    text-align: center;
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -39,28 +41,36 @@ button:active {
     background-color: rgb(69, 69, 69);
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 35px;
+    padding-top: 25px;
     width: 40vh;
     height: 30vh;
     border-radius: 5%;
 
 } 
 
+#top-row {
+    display: flex;
+    justify-content: space-between;
+}
+
 #top-row input {
-    height: 4.4vh;
-    width: 28vh;
+    height: 5vh;
+    width: 29.6vh;
     font-size: 3vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: right;
-    padding-right: 8px;
-    margin-right: 5px;
+    padding: 0px 8px 0px 8px;
+    box-sizing: border-box; /* Add this property */
+
 }
 
 #top-row button{
-    height: 5.1vh;
-    width: 8.6vh;
+    height: 5vh;
+    width: 8.8vh;
     background-color: rgb(249, 128, 8);
     color:  rgb(254, 231, 187);
+    box-sizing: border-box; /* Add this property */
 }
 
 #num-pad {
